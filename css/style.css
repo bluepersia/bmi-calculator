@@ -118,6 +118,7 @@ body {
     justify-content: center;
     align-items: center;
     pointer-events: none;
+    border:transparent;
     transition: border 300ms, background-color 300ms;
 }
 
@@ -190,6 +191,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1.5em;
 }
 
 
@@ -206,6 +208,18 @@ body {
 
 .input--imperial {
     width: 40%;
+}
+
+.form {
+    margin-bottom: 1.5em;
+}
+
+.result {
+    text-align: left;
+    color:white;
+    padding: 2em;
+    background: linear-gradient(90deg, hsl(227,92%,59%), hsl(227, 100%, 67%));
+    border-radius: .5em;
 }
 
 

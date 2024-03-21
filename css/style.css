@@ -13,6 +13,10 @@ body {
     color: var(--color-2);;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .heading-xl
 {
     font-size: 3rem;
@@ -63,12 +67,15 @@ body {
     line-height: 1.5;
 }
 
-
+.textfield-1-wrapper {
+ position: relative;   
+}
 .textfield-1
 {
     opacity: 25%;
     transition: opacity 300ms, border-color 300ms;
     padding: .83em 1em;
+    width: 100%;
 }
 
 .textfield-1:active {
@@ -79,6 +86,9 @@ body {
 .textfield-1_measurement
 {
     color: var(--color-1);
+    position: absolute;
+    top: 0px;
+    right: 1em;
 }
 
 
@@ -108,6 +118,7 @@ body {
     justify-content: center;
     align-items: center;
     pointer-events: none;
+    transition: border 300ms, background-color 300ms;
 }
 
 .radio_wrapper:hover .radio-1_custom-bg
@@ -117,6 +128,10 @@ body {
 .radio-1:checked ~ .radio-1_custom-bg
 {
     background-color: hsla(227, 92%, 58%, 15%);
+}
+
+.radio-1_custom-check  {
+    transition: background-color 300ms;
 }
 
 .radio-1:checked ~ .radio-1_custom-bg .radio-1_custom-check 
@@ -132,3 +147,102 @@ body {
     margin-left: .21em;
 }
 
+
+.header {
+    position: relative;
+    padding: 2rem 6.4% 4.5em;
+    text-align: center;
+}
+
+
+
+
+
+.header_bg 
+{
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background:linear-gradient(135deg, hsla(184, 95%, 92, 0%), hsl(216, 95%, 92%));
+    height: 70%;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.header_intro, .calc {
+
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+
+.calc {
+    padding: 1.5em;
+    background-color: white;
+}
+
+
+.calc_type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#metric-wrapper, #imperial-wrapper {
+    width:40%;
+}
+
+
+
+.calc_height--imperial, .calc_weight--imperial {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input--imperial {
+    width: 40%;
+}
+
+
+.section-1_content {
+    padding: 0 6.4%;
+}
+
+.section-1_img {
+    width: 100%;
+}
+
+.section-2 {
+    background: linear-gradient(135deg, hsl(216, 95%, 92%), hsla(184, 95, 92, 0%));
+    padding: 3.5em 6.4%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+
+.section-3 {
+    padding: 4.5em 6.4% 6em;
+}
+
+
+.section-3_header_text {
+    text-align: center;
+    margin-bottom: 3.5em;
+}
+
+
+.section-3_feature {
+    box-shadow: 0px 5px 10px hsla(215, 31%, 21%, 20%);
+    border-radius: 12px;
+    padding: 1.5em
+}
+.section-3_feature:not(:last-child)
+{
+    margin-bottom: 1em;
+}

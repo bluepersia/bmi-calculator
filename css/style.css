@@ -414,6 +414,7 @@ body {
         flex-direction: row;
         gap: 2.8%;
         justify-content: space-between;
+        padding: 4.5em 9.7% 6em;
       }
 
       .section-2_feature {
@@ -430,6 +431,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 2em;
+        padding: 7.5em 9.7% 7.5em;
       }
 
      

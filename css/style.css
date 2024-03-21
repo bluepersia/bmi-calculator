@@ -1,0 +1,95 @@
+:root {
+    --color-1: hsl(227, 92%, 58%);
+    --color-2: hsl(215, 31%, 21%);
+    --color-3: hsl(215, 17%, 45%);
+    --color-4: hsl(200, 24%, 88%);
+    --color-5: hsl(0, 0%, 100%);
+}
+
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: var(--color-2);;
+}
+
+.heading-xl
+{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.heading-l
+{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.heading-m
+{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.heading-s 
+{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+
+.body-m 
+{
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.body-m--bold 
+{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.body-s 
+{
+    font-size: .875rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+
+.textfield-1
+{
+    opacity: 25%;
+    transition: opacity 300ms, border-color 300ms;
+}
+
+.textfield-1:active {
+    opacity: 100%;
+    border-color: var(--color-1);
+}
+
+.textfield-1-wrapper_measurement
+{
+    color: var(--color-1);
+}
+
+
+.radio-1 {
+    transition: border 300ms, accent-color 300ms;
+}
+
+.radio-1:hover
+{   
+    border: solid 1px var(--color-1);
+}
+.radio-1:active 
+{
+    accent-color: var(--color-1);
+}

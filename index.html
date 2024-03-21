@@ -24,38 +24,39 @@
         <h3 class="heading-m">Enter your details below</h3>
         <form class="form">
         <div class="calc_type">
-            <div  class="radio_wrapper"><input type="radio" id="metric" class="radio-1" name="metric"/><div class="radio-1_custom-bg"><div class="radio-1_custom-check"></div>  </div><label class="radio-1_label body-m--bold" for="metric">Metric</label></div>
-            <div  class="radio_wrapper"><input type="radio" id="imperial" class="radio-1" name="metric"/><div class="radio-1_custom-bg"><div class="radio-1_custom-check"></div>  </div><label class="radio-1_label body-m--bold" for="imperial">Imperial</label></div>
+            <div  id="metric-wrapper" class="radio_wrapper"><input type="radio" id="metric" class="radio-1" name="measurement-type"/><div class="radio-1_custom-bg"><div class="radio-1_custom-check"></div>  </div><label class="radio-1_label body-m--bold" for="metric">Metric</label></div>
+            <div id="impertial-wrapper" class="radio_wrapper"><input type="radio" id="imperial" class="radio-1" name="measurement-type"/><div class="radio-1_custom-bg"><div class="radio-1_custom-check"></div>  </div><label class="radio-1_label body-m--bold" for="imperial">Imperial</label></div>
         </div>
         <div id="calc_metric">
           <div class="calc_height">
             <p class="body-s">Height</p>
-            <div id="input-height--cm" class="textfield-1-wrapper"><input type="text" class="textfield-1 heading-m" /><p class="textfield-1_measurement heading-m">cm</p></div>
+            <div id="input-height--cm" class="textfield-1-wrapper"><input type="number" min="0" value="0" class="textfield-1 heading-m" /><p class="textfield-1_measurement heading-m">cm</p></div>
           </div>
           <div class="calc_weight">
             <p class="body-s">Weight</p>
-            <div id="input-weight--kg" class="textfield-1-wrapper"><input type="text" class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">kg</p></div>
+            <div id="input-weight--kg" class="textfield-1-wrapper"><input type="number" min="0" value="0"   class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">kg</p></div>
           </div>
         </div>
         <div id="calc_imperial">
           <div class="calc_height">
             <p class="body-s">Height</p>
             <div class="calc_height--imperial">
-              <div id="input-height--ft" class="textfield-1-wrapper"><input type="text" class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">ft</p></div>
-              <div id="input-height--in" class="textfield-1-wrapper"><input type="text" class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">in</p></div>
+              <div id="input-height--ft" class="input--imperial textfield-1-wrapper"><input type="number"  min="0" value="0"  class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">ft</p></div>
+              <div id="input-height--in" class="input--imperial textfield-1-wrapper"><input type="number"  min="0" value="0"  class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">in</p></div>
             </div>
           </div>
           <div class="calc_weight">
             <p class="body-s">Weight</p>
-            <div class="calc_height--imperial">
-              <div id="input-height--st" class="textfield-1-wrapper"><input type="text" class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">st</p></div>
-              <div id="input-height--lbs" class="textfield-1-wrapper"><input type="text" class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">lbs</p></div>
+            <div class="calc_weight--imperial">
+              <div id="input-weight--st" class="input--imperial textfield-1-wrapper"><input type="number"  min="0" value="0"  class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">st</p></div>
+              <div id="input-weight--lbs" class="input--imperial textfield-1-wrapper"><input type="number" min="0" value="0"   class="textfield-1 heading-m"" /><p class="textfield-1_measurement heading-m">lbs</p></div>
             </div>
           </div>
         </div>
       </form>
       </div>
      </div>
+     <div class="header_bg"></div>
   </header>
 
   <main>

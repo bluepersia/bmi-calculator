@@ -163,7 +163,6 @@ body {
 .header_bg 
 {
     width: 100%;
-    height: 100%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     background:linear-gradient(135deg, hsla(184, 95%, 92%, 0%), hsl(216, 95%, 92%));
@@ -238,6 +237,7 @@ body {
 
 .section-1_img {
     width: 100%;
+    max-width: 1128px;
 }
 
 .section-2 {
@@ -268,6 +268,12 @@ body {
 .section-3_feature:not(:last-child)
 {
     margin-bottom: 1em;
+}
+
+
+.section-3.desktop 
+{
+    display: none;
 }
 
 
@@ -323,12 +329,18 @@ body {
 
     .section-2 {
         margin-bottom: 5.93em;
+        padding: 3.5em 5%;
     }
 
     .section-2_feature {
         display: flex;
         align-items: center;
         gap: 5.8%;
+    }
+
+    .section-3 
+    {
+        padding: 6em 5% 5.9em;
     }
 
     .section-3_features {
@@ -342,4 +354,123 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .section-3_feature:not(:last-child)
+{
+    margin-bottom: 0;
 }
+}
+
+
+
+@media (min-width: 1440px)
+{
+
+    .heading-xl {
+        font-size: 4rem;
+    }
+    .heading-l {
+        font-size: 3rem;
+    }
+    .heading-m 
+    {
+        font-size: 1.5rem;
+    }
+    .heading-s {
+        font-size: 1.25rem ;
+    }
+
+
+    .header {
+        padding: 4.68em 9.7% 5.375em;
+        text-align: left;
+    }
+
+    .header_content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header_intro {
+        padding-top: 6.18em;
+        margin-bottom: 0;
+        max-width: 564px;
+    }
+
+    .header_bg
+     {
+        width: 67.9%;
+        height: 100%;
+     }
+
+     .calc
+      {
+        margin-top: 0;
+        max-width: 564px;
+      }
+
+      .section-2 {
+        display: flex;
+        flex-direction: row;
+        gap: 2.8%;
+        justify-content: space-between;
+      }
+
+      .section-2_feature {
+        display: block;
+      }
+
+
+      .section-3.mobile 
+      {
+        display: none;
+      }
+
+      .section-3.desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+      }
+
+     
+
+      .section-3_header {
+        display: flex;
+      }
+
+      .section-3_header_text {
+        text-align: left;
+        max-width: 564px;
+        justify-self: start;
+      }
+      
+
+      .section-3_header .section-3_feature {
+        margin-left: auto;
+        margin-right: 8.85%;
+      }
+      
+      .section-3_feature 
+      {
+        max-width:365px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      .section-3_region-1, .section-3_region-2
+      {
+        display: flex;
+        justify-content: end;
+      }
+
+      .section-3_region-2 {
+        padding-right: 17.1%;
+      }
+
+
+      .section-3_header, .section-3_region-1, .section-3_region-2 
+      {
+        gap: 2.7%;
+      }
+}
+

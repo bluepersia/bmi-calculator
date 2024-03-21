@@ -347,18 +347,20 @@ body {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        gap: 2%;
     }
 
     .section-3_feature {
-        max-width: 50%;
+        width: 48%;
+        max-width: 335px;
         margin-left: auto;
         margin-right: auto;
     }
-
     .section-3_feature:not(:last-child)
-{
-    margin-bottom: 0;
-}
+    {
+        margin-bottom: 1.5em;
+    }
+  
 }
 
 
@@ -457,6 +459,11 @@ body {
         max-width:365px;
         margin-left: 0px;
         margin-right: 0px;
+      }
+
+   .section-3_feature:not(:last-child)
+      {
+          margin-bottom: 0;
       }
 
       .section-3_region-1, .section-3_region-2

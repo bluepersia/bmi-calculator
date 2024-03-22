@@ -119,7 +119,7 @@ body {
     justify-content: center;
     align-items: center;
     pointer-events: none;
-    border:transparent;
+    border: solid 1px hsla(215, 17%, 45%, 35%);
     transition: border 300ms, background-color 300ms;
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 .radio-1_label {
-    margin-left: .21em;
+    margin-left: 1em;
 }
 
 

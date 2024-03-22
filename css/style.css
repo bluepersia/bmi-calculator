@@ -204,13 +204,17 @@ body {
 
 #metric-wrapper, #imperial-wrapper {
     width:50%;
+    max-width: 500px;
 }
 
+.calc_metric_height, .calc_metric_weight, .input--imperial  {
+    max-width: 500px;
+}
 
 
 .calc_height--imperial, .calc_weight--imperial {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     gap:3%;
 }
 
